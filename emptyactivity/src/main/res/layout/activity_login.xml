@@ -99,6 +99,7 @@
         android:ems="10"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent" />
 
     <EditText
@@ -111,7 +112,8 @@
         android:layout_marginBottom="112dp"
         android:ems="10"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/email_sign_in_button"
@@ -126,6 +128,19 @@
         android:text="@string/action_sign_in"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
