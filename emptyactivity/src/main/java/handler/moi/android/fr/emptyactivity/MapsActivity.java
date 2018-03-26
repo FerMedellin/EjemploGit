@@ -1,4 +1,4 @@
-package handler.moi.android.fr.emptyactivity.;
+package handler.moi.android.fr.emptyactivity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -15,6 +15,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 
 import handler.moi.android.fr.emptyactivity.R;
+import android.app.Activity;
+
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
