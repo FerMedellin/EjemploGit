@@ -96,7 +96,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_gravity="right"
-            android:onClick="sendMessage"
+            android:onClick="FetchLoc"
             android:text="@string/button_fetch_location"
             app:layout_constraintBaseline_toBaselineOf="@+id/editText"
             app:layout_constraintEnd_toEndOf="parent"
