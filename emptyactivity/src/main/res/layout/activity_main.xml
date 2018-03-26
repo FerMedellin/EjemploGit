@@ -1,36 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="handler.moi.android.fr.emptyactivity.MainActivity">
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/edit_message"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="40dip"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:onClick="sendMessage"
-        android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText" />
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:text="Latitude: "
+            android:textSize="20dip"></TextView>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unknown"
+            android:textSize="20dip"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:text="Longitute: "
+            android:textSize="20dip"></TextView>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unknown"
+            android:textSize="20dip"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/edit_message"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="106dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:onClick="sendMessage"
+            android:text="@string/button_send"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="106dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:onClick="sendMap"
+            android:text="@string/button_sendMAP"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="handler.moi.android.fr.emptyactivity.MainActivity">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/edit_message"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:onClick="sendMessage"
+            android:text="@string/button_send"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    -->
