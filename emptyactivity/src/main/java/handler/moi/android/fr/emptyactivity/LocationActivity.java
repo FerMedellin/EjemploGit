@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Main2Activity extends AppCompatActivity implements LocationListener {
+public class LocationActivity extends AppCompatActivity implements LocationListener {
 
     Button mapbutton;
     private TextView latituteField;
@@ -30,14 +30,14 @@ public class Main2Activity extends AppCompatActivity implements LocationListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_location);
         mapbutton = (Button) findViewById(R.id.button3);
 
         mapbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(Main2Activity.this,
+                Intent myIntent = new Intent(LocationActivity.this,
                         MapsActivity.class);
                 startActivity(myIntent);
             }
