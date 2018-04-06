@@ -16,10 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
+            android:id="@+id/profile_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -53,10 +56,13 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/map_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -97,10 +103,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
+            android:id="@+id/camera_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -134,10 +143,13 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/stats_card"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -178,10 +190,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
+            android:id="@+id/save_card"
             android:layout_width="340dp"
             android:layout_height="150dp"
             android:layout_margin="10dp">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"

@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 // Start NewActivity.class
                 Intent myIntent = new Intent(LoginActivity.this,
-                        LocationActivity.class);
+                        Home.class);
                 startActivity(myIntent);
             }
         });

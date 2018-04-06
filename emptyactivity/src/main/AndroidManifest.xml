@@ -54,7 +54,10 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Stats" />
+        <activity android:name=".Camera" />
+        <activity android:name=".SaveActivity"></activity>
     </application>
 
 </manifest>
